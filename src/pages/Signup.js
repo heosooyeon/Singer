@@ -29,12 +29,14 @@ function Signup() {
             <Input
               type="text"
               placeholder="비밀번호"
+              margin-bottom="20px"
               style={{ width: "30vw" }}
             ></Input>
             <Input
               type="text"
               placeholder="비밀번호 확인"
               margin-top="220px"
+              margin-bottom="20px"
               style={{ width: "30vw" }}
             ></Input>
 
@@ -77,14 +79,11 @@ const WhiteBox = styled.div`
 `;
 
 const Set = styled.div`
-  position: flex;
   flex-direction: column;
   align-items: left;
-  margin-bottom: 20px;
 `;
 
 const Input = styled.input`
-  position: flex;
   border: solid #f849ba 3px;
   height: 7vh;
   font-size: 25px;
@@ -118,25 +117,25 @@ const Button = styled.input`
 
 const InputBox = styled.div`
   display: flex;
-  margin: auto;
-  justify-content: center;
+  height: 47vh;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   float: left;
 `;
 
 const Singup = styled.input`
-  position flex;
-  width : 25vw;
-  height : 6vh;
-  border-radius : 5px;
-  border : none;
-  background-color : black;
-  color : white;
-  font-size : 23px;
-  &:hover{
-    background-color : #F849BA;
-    cursor : pointer;
+  width: 25vw;
+  height: 6vh;
+  margin-top: 22px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 23px;
+  &:hover {
+    background-color: #f849ba;
+    cursor: pointer;
   }
 `;
 
