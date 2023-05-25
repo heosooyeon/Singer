@@ -1,9 +1,24 @@
+import React from "react";
+import styled from "styled-components";
+import Search from "./Search";
+import Chart from "./Chart";
+import Heart from "./Heart";
+
 function Main() {
   return (
     <div>
-      <h1>아 시끄러워</h1>
+      <Outer scrolling="no">
+        <Search />
+        <Chart />
+        <Heart />
+      </Outer>
     </div>
   );
 }
+
+const Outer = styled.div`
+  overflow: hidden;
+  height: 100%;
+`;
 
 export default Main;
