@@ -8,6 +8,16 @@ function First() {
         <Logo alt="logo" src={require("../image/Logo.png")}></Logo>
         <WhiteBox>
           <SearchBar></SearchBar>
+          <Table>
+            <table border="1">
+              <tr>
+                <td>No.</td>
+                <td>노래 제목</td>
+                <td>가사</td>
+                <td>노래방 번호</td>
+              </tr>
+            </table>
+          </Table>
         </WhiteBox>
       </BackBox>
     </div>
@@ -52,5 +62,10 @@ const SearchBar = styled.input`
     color: black;
     border: 5px solid #f849ba;
   }
+`;
+
+const Table = styled.div`
+  margin-left: 42%;
+  margin-top: 20px;
 `;
 export default First;
