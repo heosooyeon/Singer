@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Table from "./Table.js";
+import Input from "./Input.js";
 
 function First() {
   return (
@@ -8,7 +9,7 @@ function First() {
       <BackBox>
         <Logo alt="logo" src={require("../image/Logo.png")}></Logo>
         <WhiteBox>
-          <SearchBar></SearchBar>
+          <Input></Input>
           <Table></Table>
         </WhiteBox>
       </BackBox>
@@ -37,23 +38,23 @@ const WhiteBox = styled.div`
   text-align: center;
 `;
 
-const SearchBar = styled.input`
-  background-color: #f849ba;
-  margin-top: 8vh;
-  width: 25vw;
-  height: 9vh;
-  padding-left: 25px;
-  border-radius: 50px;
-  border: none;
-  font-size: 35px;
-  &:focus {
-    width: 24vw;
-    height: 8vh;
-    outline: none;
-    background-color: white;
-    color: black;
-    border: 5px solid #f849ba;
-  }
-`;
+// const SearchBar = styled.input`
+//   background-color: #f849ba;
+//   margin-top: 8vh;
+//   width: 25vw;
+//   height: 9vh;
+//   padding-left: 25px;
+//   border-radius: 50px;
+//   border: none;
+//   font-size: 35px;
+//   &:focus {
+//     width: 24vw;
+//     height: 8vh;
+//     outline: none;
+//     background-color: white;
+//     color: black;
+//     border: 5px solid #f849ba;
+//   }
+// `;
 
 export default First;
