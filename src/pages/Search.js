@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Table from "./Table.js";
-import Input from "./Input.js";
+import Input from "./Search_bar.js";
 
 function First() {
   return (
